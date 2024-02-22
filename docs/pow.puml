@@ -1,0 +1,12 @@
+@startuml pow
+
+class Pow
+class Juego
+class JuegoPelota
+class Pelota
+
+Pow o-- Juego
+Juego <|-- JuegoPelota
+Pelota --* JuegoPelota
+
+@enduml
