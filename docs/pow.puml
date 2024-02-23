@@ -1,12 +1,14 @@
 @startuml pow
 
-class Pow
-class Juego
-class JuegoPelota
-class Pelota
+class Mascota{
+    - vida : int
+    + Comer(alimento:Alimento)
+}
+class Alimento{
+    - energia : int
+    + ExtraerEnergia()
+}
 
-Pow o-- Juego
-Juego <|-- JuegoPelota
-Pelota --* JuegoPelota
+Mascota o-- Alimento
 
 @enduml
